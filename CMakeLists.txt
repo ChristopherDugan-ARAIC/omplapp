@@ -50,7 +50,7 @@ set_package_properties(Boost PROPERTIES
     PURPOSE "Used throughout OMPL for data serialization, graphs, etc.")
 set(Boost_USE_MULTITHREADED ON)
 set(Boost_NO_BOOST_CMAKE ON)
-find_package(Boost 1.58 QUIET REQUIRED COMPONENTS serialization filesystem system program_options)
+find_package(Boost 1.58 QUIET COMPONENTS serialization filesystem system program_options)
 
 # on macOS we need to check whether to use libc++ or libstdc++ with clang++
 if(CMAKE_CXX_COMPILER_ID MATCHES "^(Apple)?Clang$")
