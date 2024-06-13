@@ -108,7 +108,7 @@ endif()
 set_package_properties(Eigen3 PROPERTIES
     URL "http://eigen.tuxfamily.org"
     PURPOSE "A linear algebra library used throughout OMPL.")
-find_package(Eigen3 REQUIRED)
+find_package(Eigen3)
 set_package_properties(Triangle PROPERTIES
     URL "http://www.cs.cmu.edu/~quake/triangle.html"
     PURPOSE "Used to create triangular decompositions of polygonal 2D environments.")
